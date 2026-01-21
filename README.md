@@ -1,9 +1,9 @@
 # Cafe Sales Data Cleaning Project (Apple Numbers)
 
-## Overview
-This project showcases end-to-end data cleaning in Apple Numbers using a messy cafe sales dataset. The goal was to transform inconsistent and error-prone raw data into a clean, analysis-ready dataset while preserving transparency and traceability throughout the cleaning process.
+### Overview
+I transformed a messy cafe sales dataset into a fully traceable, analysis-ready dataset.
 
-## Dataset Description
+### Dataset Description
 The dataset contains cafe transaction records with the following fields:
 - Item
 - Quantity
@@ -13,9 +13,9 @@ The dataset contains cafe transaction records with the following fields:
 - Location
 - Transaction Date
 
-The raw data intentionally includes common real-world issues such as missing values, text stored as numbers, inconsistent capitalization, and invalid entries.
+The raw data contains common real-world issues, including missing values, numbers stored as text, inconsistent capitalization, and invalid entries.
 
-## Data Quality Issues Identified
+### Issues Identified
 - Blank and inconsistent item names
 - Quantity and price stored as text
 - Invalid values such as "Error" and "Unknown"
@@ -23,17 +23,16 @@ The raw data intentionally includes common real-world issues such as missing val
 - Inconsistent capitalization in text fields
 - Missing or invalid transaction dates
 
-## Cleaning Approach
-To ensure accuracy and transparency, the following approach was used:
-- Preserved all original (raw) columns and did not overwrite source data
-- Created cleaned and final columns using formulas
-- Standardized text fields by trimming extra spaces and converting text to uppercase
-- Converted numeric text fields into usable numeric values
-- Explicitly marked missing or invalid numeric values as "UNKNOWN"
-- Recalculated Total Spent only when both Quantity and Price were valid
-- Hid raw columns in the cleaned file to present a clean, analysis-ready view
+### Cleaning Approach
+- Preserved all raw columns
+- Created cleaned columns using formulas
+- Standardized text (trimmed spaces, uppercase)
+- Converted numeric text into numbers
+- Labeled missing or invalid values as "UNKNOWN"
+- Recalculated Total Spent only when inputs were valid
+- Hid raw columns for a clean, analysis-ready view
 
-This mirrors real-world analytics workflows where raw data is retained for traceability while cleaned data is used for reporting and analysis.
+This mirrors how I work with data. Raw data is always kept for traceability, and cleaned data is ready for reporting and analysis.
 
 ## Key Formulas Used
 
@@ -60,16 +59,38 @@ This mirrors real-world analytics workflows where raw data is retained for trace
 ```
 
 ## Before & After Examples
-Screenshots below show original and cleaned columns side-by-side to highlight key cleaning steps.
 
-![Item Cleaning](screenshots/01_item_cleaning.png)
-![Quantity Cleaning](screenshots/02_quantity_cleaning.png)
-![Price Cleaning](screenshots/03_price_cleaning.png)
-![Total Spent](screenshots/04_total_spent.png)
-![Location & Payment Method](screenshots/05_location_payment.png)
-![Transaction Date](screenshots/06_transaction_date.png)
+<figure>
+ <figcaption>Item Cleaning (Before & After)</figcaption>
+   <img src="screenshots/01_item_cleaning.png" width="400">
+</figure>
 
-## Files in This Repository
+<figure>
+<figcaption>Quantity Cleaning (Before & After)</figcaption>
+   <img src="screenshots/02_quantity_cleaning.png" width="400">
+</figure>
+
+<figure>
+<figcaption>Price Per Unit Cleaning (Before & After)</figcaption>
+   <img src="screenshots/03_price_cleaning.png" width="400">
+</figure>
+
+<figure>
+ <figcaption>Total Spent Calculation (Before & After)</figcaption>
+  <img src="screenshots/04_total_spent.png" width="400">
+</figure>
+
+<figure>
+ <figcaption>Location & Payment Method Standardization (Before & After)</figcaption>
+   <img src="screenshots/05_location_payment.png" width="400">
+</figure>
+
+<figure>
+   <figcaption>Transaction Date Formatting (Before & After)</figcaption>
+   <img src="screenshots/06_transaction_date.png" width="400">
+</figure>
+
+### Files in This Repository
 ```
 /data
   Cafe_Sales_Raw.numbers
@@ -84,11 +105,13 @@ Screenshots below show original and cleaned columns side-by-side to highlight ke
 README.md
 ```
 
-## Outcome
-The final dataset is clean, consistent, and safe for analysis. All transformations are formula-based, clearly documented, and reproducible. This project demonstrates practical spreadsheet data cleaning skills and best practices for maintaining data integrity.
+### Outcome
+Clean, consistent, and analysis-ready dataset with documented, reproducible spreadsheet transformations.
 
 ## Next Steps
-The cleaned dataset can now be used for:
-- Sales analysis and reporting
-- Data visualization and dashboards
-- Migration to SQL, Python, or BI tools
+
+Voilà! With the cleaned dataset, we can now:
+
+- Analyze sales and generate reports
+- Create visualizations and dashboards
+- Import the data into SQL, Python, or BI tools for further analysis
