@@ -1,4 +1,4 @@
-# Cafe Sales Data Cleaning Project (Apple Numbers)
+# Cafe Sales Data Cleaning & Analysis (Apple Numbers)
 
 ### Overview
 I transformed a messy cafe sales dataset into a fully traceable, analysis-ready dataset.
@@ -34,7 +34,7 @@ The raw data contains common real-world issues, including missing values, number
 
 This mirrors how I work with data. Raw data is always kept for traceability, and cleaned data is ready for reporting and analysis.
 
-## Key Formulas Used
+### Key Formulas Used
 
 ### Quantity_Cleaned_Final
 ```text
@@ -108,10 +108,36 @@ README.md
 ### Outcome
 Clean, consistent, and analysis-ready dataset with documented, reproducible spreadsheet transformations.
 
-## Next Steps
+### Next Steps
 
 Voilà! With the cleaned dataset, we can now:
 
 - Analyze sales and generate reports
 - Create visualizations and dashboards
 - Import the data into SQL, Python, or BI tools for further analysis
+
+### Data Visualizations
+
+I used pivot tables in Apple Numbers to summarize the cleaned data and created bar charts to highlight insights.
+
+<figure>
+  <figcaption>Quantity Sold by Item Category, Location, and Year</figcaption>
+  <img src="screenshots/quantity_by_category_location_year.png" width="400">
+</figure>
+
+<figure>
+  <figcaption>Total Spent by Location</figcaption>
+  <img src="screenshots/total_spent_by_location.png" width="400">
+</figure>
+
+<figure>
+  <figcaption>Sales Quantity by Payment Method and Location</figcaption>
+  <img src="screenshots/sales_by_payment_location.png" width="400">
+</figure>
+
+<figure>
+  <figcaption>Yearly Total Spent Breakdown by Payment Method</figcaption>
+  <img src="screenshots/yearly_total_spent_payment.png" width="400">
+</figure>
+
+These charts highlight sales trends across locations, payment methods, item categories, and years.
